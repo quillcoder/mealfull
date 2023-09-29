@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal App</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Alarm Clock</title>
 </head>
 <body>
-    <div class="clock">
-        <div class="time">
-            <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>
-        </div>
-        <div class="controls">
-            <input type="time" id="alarmTime">
-            <button id="setAlarm">Set Alarm</button>
-        </div>
-        <button id="clearAlarm">Clear Alarm</button>
+    <h1>Meal App</h1>
+    
+    <div id="meal-form">
+        <h2>Add a Meal</h2>
+        <input type="text" id="meal-name" placeholder="Meal Name">
+        <button id="add-meal">Add Meal</button>
     </div>
-    <script src="script.js"></script>
+
+    <div id="meal-list">
+        <h2>Meals</h2>
+        <input type="text" id="search-meal" placeholder="Search Meals">
+        <ul id="meal-items">
+            <!-- Meal items will be added here dynamically -->
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
